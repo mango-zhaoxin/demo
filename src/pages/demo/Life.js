@@ -1,6 +1,6 @@
 import React from 'react';
 import Child from './Child.js';
-import { Button } from 'antd';
+import { Button, Input } from 'antd';
 import './index.less';
 
 export default class Life extends React.Component {
@@ -27,6 +27,7 @@ export default class Life extends React.Component {
   render() {
     return (
       <div className="content">
+        <Input placeholder='react主题色'></Input>
         <p>React 生命周期介绍</p>
         <Button onClick={this.handleClick.bind(this)}>antd 点击一下</Button>
         <button onClick={this.handleClick.bind(this)}>点击一下</button>
